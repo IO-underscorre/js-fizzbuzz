@@ -26,13 +26,14 @@ h1 {
 #fizzbuzz-container {
     width: 85%;
     max-width: 118rem;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
+/* JavaScript created items properties */
 #fizzbuzz-container > * {
     width: 10rem;
     aspect-ratio: 1 / 1;
@@ -42,15 +43,15 @@ h1 {
     align-items: center;
 }
 
-.fizz {
-    background-color: #1389b2;
+#fizzbuzz-container > .fizz {
+    background-color: #0cd6a1;
 }
 
-.buzz{
+#fizzbuzz-container > .buzz{
     background-color: #ffd166;
 }
 
-.fizz.buzz {
+#fizzbuzz-container > .fizz.buzz {
     background-color: #f0466f;
 }
 
