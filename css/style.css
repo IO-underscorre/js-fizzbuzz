@@ -8,3 +8,63 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #083b4c;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#fizzbuzz-container {
+    width: 85%;
+    max-width: 118rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#fizzbuzz-container > * {
+    width: 10rem;
+    aspect-ratio: 1 / 1;
+    background-color: #1389b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fizz {
+    background-color: #1389b2;
+}
+
+.buzz{
+    background-color: #ffd166;
+}
+
+.fizz.buzz {
+    background-color: #f0466f;
+}
+
+
+
+@media all and (max-width: 780px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+
+@media all and (max-width: 430px) {
+    #fizzbuzz-container > * {
+        width: 100%;
+    }
+}
