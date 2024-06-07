@@ -1,5 +1,6 @@
 const container = document.getElementById('fizzbuzz-container');
 
+// Examines numbers from 1 to 100
 for (let i = 1 , isPrime = true , primeNmbs = []; i <= 100; i++ , isPrime = true) {
     const newDiv = document.createElement('div');
     const currentNumber = document.createElement('span');
@@ -7,7 +8,7 @@ for (let i = 1 , isPrime = true , primeNmbs = []; i <= 100; i++ , isPrime = true
     currentNumber.classList.add('current-number');
     newDiv.append(currentNumber);
 
-    // I check for every prime number (primeNmbs) already found if some of them divide the number currently cheacking (i)
+    // Checks for every prime number (primeNmbs) already found if some of them divide the number currently cheacking (i)
     for (let j = 0 ; j < primeNmbs.length ; j++) {
         if (i % primeNmbs[j] === 0) {
             const divisor = document.createElement('span');
